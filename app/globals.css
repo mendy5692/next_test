@@ -1,0 +1,60 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-pass-nav {
+  top: 10vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 10vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+h4 {
+  font-size: 1.3vw;
+}
+
+h5 {
+  font-size: 1vw;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_inline {
+  margin-left: 5px;
+  margin-top: 5px;
+}
