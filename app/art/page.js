@@ -1,3 +1,3 @@
 export default function ArtPage() {
-    return <div>ArtPage</div>
+  return <div className="top-pass-nav">ArtPage: </div>;
 }

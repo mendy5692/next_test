@@ -1,18 +1,18 @@
-import MarkunreadIcon from "@mui/icons-material/Markunread";
+import { IoMdHome } from "react-icons/io";
+import { IoColorPaletteSharp } from "react-icons/io5";
 import { GiCandleHolder } from "react-icons/gi";
-import CategoryIcon from "@mui/icons-material/Category";
+import { MdCategory } from "react-icons/md";
+import { MdMarkunread } from "react-icons/md";
 import { GrUserAdmin } from "react-icons/gr";
-import HomeSharpIcon from "@mui/icons-material/HomeSharp";
-import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import "../navbar.css";
 
 export const items = [
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Home</p>
         <p className="icon_inline">
-          <HomeSharpIcon />
+          <IoMdHome />
         </p>
       </div>
     ),
@@ -20,10 +20,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Art</p>
         <p className="icon_inline">
-          <PaletteSharpIcon />
+          <IoColorPaletteSharp />
         </p>
       </div>
     ),
@@ -31,7 +31,7 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Judaica</p>
         <p className="icon_inline">
           <GiCandleHolder />
@@ -42,10 +42,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Decorations</p>
         <p className="icon_inline">
-          <CategoryIcon />
+          <MdCategory />
         </p>
       </div>
     ),
@@ -53,10 +53,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Contact</p>
         <p className="icon_inline">
-          <MarkunreadIcon />
+          <MdMarkunread />
         </p>
       </div>
     ),
@@ -64,7 +64,7 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Admin</p>
         <p className="icon_inline">
           <GrUserAdmin />

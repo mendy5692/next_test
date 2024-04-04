@@ -1,3 +1,3 @@
 export default function JudaicaPage() {
-    return <div>JudaicaPage</div>
+    return <div className="top-pass-nav">JudaicaPage</div>
 }

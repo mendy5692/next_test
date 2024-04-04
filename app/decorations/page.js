@@ -1,3 +1,3 @@
 export default function DecorationsPage() {
-    return <div>DecorationsPage</div>
+    return <div className="top-pass-nav">DecorationsPage</div>
 }
