@@ -1,0 +1,82 @@
+.grid-container {
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.grid-container input {
+  height: 50px;
+  padding: 0 25px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height:auto;
+  border: 3px solid rgb(196, 176, 0);
+  border-radius: 25px;
+  padding: 30px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s;
+  background-color: rgb(171, 213, 234);
+  opacity: 0.8;
+}
+
+.grid_item:hover {
+  scale: 105%;
+}
+
+.myimg {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+
+.mytext {
+  text-align: center;
+}
+
+.row-toolsBar {
+  display: flex;
+  width: 93%;
+  background-color: rgb(171, 213, 234);
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 15px;
+  margin: auto;
+}
+
+.select-choich {
+  margin-right: 30px;
+}
+
+.standard-basic {
+  width: 30%;
+  transition: all 1s;
+}
+
+.standard-basic:hover {
+  width: 100%;
+}
+
+.standard-basic:has(input:focus) {
+  width: 100%;
+}

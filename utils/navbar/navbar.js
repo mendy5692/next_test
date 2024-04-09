@@ -21,10 +21,9 @@ export default function Navbar() {
 }
 
 function Navitem({ item }) {
-
   return (
     <li>
-      <a href={item.href} className={item.current && 'current'}>
+      <a href={item.href} className={item.current && "current"}>
         {item.title}
       </a>
     </li>

@@ -65,7 +65,7 @@ export const items = [
   {
     title: (
       <div className="disply_nav_item">
-        <p>Admin</p>
+        <p>admin</p>
         <p className="icon_inline">
           <GrUserAdmin />
         </p>

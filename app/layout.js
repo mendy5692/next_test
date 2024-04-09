@@ -1,7 +1,7 @@
 import { Assistant } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/utils/navbar/navbar";
 import "../utils/heroSection/heroSection.css";
+import Navbar from "../utils/navbar/navbar";
 
 const assistant = Assistant({ subsets: ["hebrew", "latin"] });
 
