@@ -57,9 +57,11 @@ function GridItem({ item }) {
         <Image
           src={item.img_url}
           alt="img"
-          layout="fill"
-          objectFit="contain"
-          objectPosition="center"
+          fill
+          style={{
+            objectFit: "contain",
+            objectPosition: "center",
+          }}
         />
       </div>
       <div className="mytext column">
