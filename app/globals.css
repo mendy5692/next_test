@@ -59,8 +59,18 @@ input:-webkit-autofill:active {
   margin-top: 5px;
 }
 
-.mmm {
+.pageSkeleton {
   height: 100vh;
   width: 100%;
-  background-color: tomato;
+}
+
+.searchSkeleton {
+  top: 15vh;
+  align-items: center;
+}
+
+.gridSkeleton {
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
