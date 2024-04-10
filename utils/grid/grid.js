@@ -2,9 +2,9 @@
 import { useState } from "react";
 import "./grid.css";
 import { nanoid } from "nanoid";
-import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import Image from "next/image";
 import { SortProducts } from "../sortProducts";
+import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
 
 export default function Grid({ grid_items_list }) {
   const [search, setSearch] = useState("");
