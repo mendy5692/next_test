@@ -4,8 +4,6 @@ import "./grid.css";
 import { nanoid } from "nanoid";
 import Image from "next/image";
 import { SortProducts } from "../sortProducts";
-import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
-
 export default function Grid({ grid_items_list }) {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState(0);
@@ -17,28 +15,31 @@ export default function Grid({ grid_items_list }) {
   return (
     <div className="grid-container">
       <div className="row-toolsBar">
-        <div className="select-choich">
-          <InputLabel id="demo-simple-select-label">Sort by</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            value={sortBy}
+        <div className="selectContainer row">
+          <select
+            class="select"
             onChange={(e) => setSortBy(parseInt(e.target.value))}
           >
-            <MenuItem value={0}>name asc</MenuItem>
-            <MenuItem value={1}>name des</MenuItem>
-            <MenuItem value={2}>price asc</MenuItem>
-            <MenuItem value={3}>price des</MenuItem>
-          </Select>
+            <option selected>Sort By:</option>
+            <option value="0">name asc</option>
+            <option value="1">name des</option>
+            <option value="2">price asc</option>
+            <option value="3">price des</option>
+          </select>
         </div>
-        <TextField
-          className="standard-basic"
-          label="Search..."
-          variant="standard"
-          onChange={(e) => {
-            setSearch(e.target.value);
-          }}
-        />
+
+        <div class="textfildContainer">
+          <input
+            type="text"
+            class="textfild"
+            placeholder="Serch..."
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
+        </div>
       </div>
+
       <div className="grid">
         {final_items_list.length > 0 ? (
           final_items_list

@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   width: auto;
-  height:auto;
+  height: auto;
   border: 3px solid rgb(196, 176, 0);
   border-radius: 25px;
   padding: 30px;
@@ -62,21 +62,38 @@
   border-radius: 25px;
   padding: 15px;
   margin: auto;
+  gap: 7%;
 }
 
-.select-choich {
-  margin-right: 30px;
+.selectContainer {
+  width: 15%;
 }
 
-.standard-basic {
+.select {
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid rgb(196, 176, 0);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.textfildContainer {
+  width: 68%;
+}
+
+.textfild {
   width: 30%;
   transition: all 1s;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(196, 176, 0);
+  outline-width: 0;
 }
 
-.standard-basic:hover {
+.textfild:hover {
   width: 100%;
 }
 
-.standard-basic:has(input:focus) {
+.textfild:focus {
   width: 100%;
 }
