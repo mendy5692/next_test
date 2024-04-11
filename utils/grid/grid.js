@@ -17,10 +17,10 @@ export default function Grid({ grid_items_list }) {
       <div className="row-toolsBar">
         <div className="selectContainer row">
           <select
-            class="select"
+            className="select"
             onChange={(e) => setSortBy(parseInt(e.target.value))}
+            defaultValue={"0"}
           >
-            <option selected>Sort By:</option>
             <option value="0">name asc</option>
             <option value="1">name des</option>
             <option value="2">price asc</option>
@@ -28,10 +28,10 @@ export default function Grid({ grid_items_list }) {
           </select>
         </div>
 
-        <div class="textfildContainer">
+        <div className="textfildContainer">
           <input
             type="text"
-            class="textfild"
+            className="textfild"
             placeholder="Serch..."
             onChange={(e) => {
               setSearch(e.target.value);
