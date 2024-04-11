@@ -46,6 +46,9 @@
 
 .myimg {
   height: 30vh;
+  @media only screen and (max-width: 600px) {
+    height: 10vh;
+  }
   width: 100%;
   position: relative;
 }
