@@ -1,0 +1,48 @@
+.admin-reg-container {
+    width: 30%;
+    @media only screen and (max-width: 600px) {
+      width: 70%;
+    }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    margin: 20px;
+    background-color:  rgb(171, 213, 234);
+    border-radius: 8px;
+    border: 3px solid rgb(196, 176, 0);
+    opacity: 0.8;
+    position: fixed;
+}
+
+.admin-reg-form {
+    gap: 15px;
+}
+
+.admin-reg-form input{
+    background-color: rgb(242, 203, 145);
+    height: 5vh;
+    border-radius: 8px;
+    border: 3px solid rgb(4, 73, 103);
+    padding: 5px;
+    font-size: large;
+}
+
+.admin-reg-form button{
+    background-color: rgb(242, 181, 89);
+    height: 5vh;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    font-size: large;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.admin-reg-form button:hover{
+    background-color: rgb(242, 169, 60);
+
+
+}
