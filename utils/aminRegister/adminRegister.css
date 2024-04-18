@@ -6,7 +6,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 25px;
     padding: 15px;
     margin: 20px;
     background-color:  rgb(171, 213, 234);
@@ -20,7 +20,8 @@
     gap: 15px;
 }
 
-.admin-reg-form input{
+.admin-reg-form input,
+.select {
     background-color: rgb(242, 203, 145);
     height: 5vh;
     border-radius: 8px;
