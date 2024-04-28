@@ -6,6 +6,7 @@ export default async function ArtPage() {
     "https://express-project-ou7o.onrender.com/art"
   );
 
+  
   return (
     <div>
       <Grid grid_items_list={result.data} />
